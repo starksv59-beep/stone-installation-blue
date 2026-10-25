@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{компания}} · монтаж изделий из натурального камня</title>
+<meta name="description" content="Монтаж изделий из натурального камня по всей России: столешницы, подоконники, лестницы, ванные, полы, фасады, входные группы, перила. Ориентир цены по фото, точная смета после замера, после подписания договора смета не меняется.">
+<link rel="canonical" href="https://{{домен}}/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="{{компания}} · монтаж изделий из натурального камня">
+<meta property="og:description" content="Камень внутри дома и снаружи по всей России: столешницы, лестницы, ванные, фасады, входные группы, перила. Ориентир цены по фото, точная смета после замера.">
+<meta property="og:image" content="https://{{домен}}/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="preload" href="assets/fonts/piazzolla-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%275%27 y=%275%27 width=%2722%27 height=%2722%27 rx=%274%27 fill=%27%237cc4ff%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<style>
+  /* ---- шрифты: свои файлы, без Google Fonts ---------------------------- */
+  @font-face { font-family: "Piazzolla"; font-style: normal; font-weight: 500 600; font-display: swap;
+    src: url(assets/fonts/piazzolla-cyr.woff2) format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+  @font-face { font-family: "Piazzolla"; font-style: normal; font-weight: 500 600; font-display: swap;
+    src: url(assets/fonts/piazzolla-lat.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212; }
+  @font-face { font-family: "Piazzolla"; font-style: italic; font-weight: 500; font-display: swap;
+    src: url(assets/fonts/piazzolla-italic-cyr.woff2) format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+  @font-face { font-family: "Piazzolla"; font-style: italic; font-weight: 500; font-display: swap;
+    src: url(assets/fonts/piazzolla-italic-lat.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212; }
+  @font-face { font-family: "Manrope"; font-style: normal; font-weight: 400 600; font-display: swap;
+    src: url(assets/fonts/manrope-cyr.woff2) format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+  @font-face { font-family: "Manrope"; font-style: normal; font-weight: 400 600; font-display: swap;
+    src: url(assets/fonts/manrope-lat.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212; }
+
+  html, body { background: #0b1b2e; }
+
+  /* ---- тема: палитра Б «графит и тёплый камень» -------------------------- */
+  .v-page {
+    --v-canvas: #0b1b2e; --v-surface: #12263d;
+    --v-ink: #eaf3fc; --v-ink-soft: #a9bfd6;
+    --v-accent: #7cc4ff; --v-accent-ink: #06223b;
+    --v-font-display: "Piazzolla", "Georgia", "Times New Roman", serif;
+    --v-font-text: "Manrope", "Segoe UI", system-ui, sans-serif;
+    --v-shadow-color: 2 8 16;
+    --v-radius: 10px;
+  }
+  .v-page .v-display { font-weight: 600; letter-spacing: -0.015em; text-wrap: balance; }
+  .v-page .v-display--xl { line-height: .98; }
+  .v-page .v-display em { font-style: italic; font-weight: 500; color: var(--v-accent); }
+  .v-page .v-lede { font-weight: 500; }
+  .v-page [id] { scroll-margin-top: 5rem; }
+  .tap { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+  @media (max-width: 760px) {
+    .v-page { --v-t-sm: 1rem; --v-t-xs: 0.8125rem; }
+  }
+
+  /* ---- шапка ------------------------------------------------------------- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between;
+    padding: var(--v-3) var(--v-gutter); gap: var(--v-4);
+    background: linear-gradient(to bottom, rgb(11 27 46 / .88), rgb(11 27 46 / 0));
+    transition: background-color .24s var(--v-ease-out), box-shadow .24s var(--v-ease-out); }
+  .bar.is-scrolled { background: rgb(11 27 46); box-shadow: 0 1px 0 rgb(234 243 252 / .10), 0 8px 24px rgb(2 8 16 / .35); }
+  .bar__mark { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-base); letter-spacing: 0; text-decoration: none; display: inline-flex; align-items: center; gap: .5em; min-height: 44px; }
+  .bar__mark i { width: .7em; height: .7em; border-radius: 2px; background: var(--v-accent); display: inline-block; transform: rotate(45deg); }
+  .bar__right { display: flex; align-items: center; gap: var(--v-5); }
+  .bar__tel { font-weight: 600; font-size: var(--v-t-sm); color: var(--v-ink); padding: 0 .25em; }
+  @media (max-width: 760px) { .bar__tel { display: none; } .bar .v-btn { padding: .75em 1.1em; font-size: .9375rem; } }
+
+  /* ---- меню разделов: в строку на широком экране, под кнопкой на узком ---- */
+  .nav { display: flex; align-items: center; gap: var(--v-6); margin-inline: auto; }
+  .nav a { position: relative; display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; font-size: var(--v-t-sm); font-weight: 500; color: var(--v-ink-soft);
+    transition: color .18s var(--v-ease-out); }
+  .nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 8px; height: 1px; background: var(--v-accent); transform: scaleX(0); transform-origin: left; transition: transform .24s var(--v-ease-out); }
+  .nav a.is-on { color: var(--v-ink); }
+  .nav a.is-on::after { transform: scaleX(1); }
+  @media (hover: hover) and (pointer: fine) { .nav a:hover { color: var(--v-ink); } }
+  .burger { display: none; position: relative; width: 44px; height: 44px; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--v-hair-strong); }
+  .burger i, .burger i::before, .burger i::after { position: absolute; left: 50%; width: 16px; height: 1.5px; margin-left: -8px; background: var(--v-ink); transition: transform .24s var(--v-ease-out), opacity .18s var(--v-ease-out); }
+  .burger i { top: 50%; }
+  .burger i::before, .burger i::after { content: ""; left: 0; margin-left: 0; }
+  .burger i::before { transform: translateY(-5px); }
+  .burger i::after { transform: translateY(5px); }
+  .bar.is-open .burger i { background: transparent; }
+  .bar.is-open .burger i::before { transform: rotate(45deg); background: var(--v-ink); }
+  .bar.is-open .burger i::after { transform: rotate(-45deg); background: var(--v-ink); }
+  .menu { position: absolute; left: 0; right: 0; top: 100%; padding: var(--v-3) var(--v-gutter) var(--v-6); background: rgb(11 27 46); box-shadow: 0 1px 0 rgb(234 243 252 / .10), 0 16px 32px rgb(2 8 16 / .5);
+    opacity: 0; transform: translateY(-8px); pointer-events: none; transition: opacity .2s var(--v-ease-out), transform .2s var(--v-ease-out); }
+  .bar.is-open .menu { opacity: 1; transform: none; pointer-events: auto; }
+  .menu nav { display: grid; }
+  .menu nav a { display: flex; align-items: center; min-height: 52px; border-bottom: 1px solid var(--v-hair); text-decoration: none; font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); color: var(--v-ink-soft); }
+  .menu nav a.is-on { color: var(--v-ink); }
+  .menu__tel { display: inline-flex; align-items: center; min-height: 52px; margin-top: var(--v-3); font-weight: 600; color: var(--v-accent); text-decoration: none; }
+  .bar.is-open { background: rgb(11 27 46); }
+  @media (min-width: 1181px) { .menu { display: none; } }
+  @media (max-width: 1180px) { .nav { display: none; } .burger { display: inline-block; } .bar__right { margin-left: auto; } }
+  @media (max-width: 760px) { .bar__right { gap: var(--v-3); } }
+  @media (prefers-reduced-motion: reduce) { .menu, .nav a::after, .burger i, .burger i::before, .burger i::after { transition: none; } }
+
+  /* ---- светло-голубые блоки между тёмно-синими сценами ------------------ */
+  .v-page .is-light { --v-ink: #0d2238; --v-ink-soft: #45607c; --v-accent: #1d5fa6; --v-accent-ink: #ffffff; --v-surface: #ffffff;
+    --v-hair: color-mix(in oklab, #0d2238 14%, transparent); --v-hair-strong: color-mix(in oklab, #0d2238 26%, transparent);
+    --v-shadow-color: 29 72 120; color: var(--v-ink); background: #eaf3fb; }
+  .v-page .is-light--deep { background: #dcebf8; }
+  .v-page .is-light .work figcaption { color: #c9d9ea; }
+  .v-page .is-light .work figcaption b { color: #ffffff; }
+  .v-page .is-light .dir figcaption { color: #ffffff; }
+
+  /* ---- «Позвонить» на телефоне: закреплена внизу экрана ----------------- */
+  .call { display: none; }
+  @media (max-width: 760px) {
+    .call { position: fixed; z-index: 35; right: var(--v-gutter); bottom: calc(1rem + env(safe-area-inset-bottom)); display: inline-flex; align-items: center; gap: .5em;
+      min-height: 48px; padding: 0 1.15em; border-radius: 999px; font-weight: 600; font-size: .9375rem; text-decoration: none;
+      background: var(--v-surface); color: var(--v-ink); box-shadow: inset 0 0 0 1px var(--v-hair-strong), 0 10px 28px rgb(2 8 16 / .55); }
+    .call svg { width: 18px; height: 18px; fill: var(--v-accent); }
+  }
+
+  /* ---- hero: дом с каменным фасадом, тонированный в синий; фон едет медленнее текста ---- */
+  .hero__img { overflow: hidden; }
+  .v-page .hero__img img { width: 100%; height: 124%; left: 0; top: -6%; object-fit: cover; object-position: 70% 55%; }
+  /* тонировка: кадр пасмурный, переводим его в синюю гамму, светлота кадра сохраняется */
+  .hero__tint { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(160deg, #0b1b2e 0%, #1d4f86 55%, #7cc4ff 100%); mix-blend-mode: color; opacity: .6; }
+  /* колонка: слева под текстом глубокий синий, к правому краю фасад открывается */
+  .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(to right, rgb(11 27 46) 0%, rgb(11 27 46 / .94) 30%, rgb(11 27 46 / .6) 50%, rgb(11 27 46 / .1) 72%, transparent 85%),
+                linear-gradient(to top, rgb(11 27 46 / .7) 0%, transparent 28%); }
+  .hero__copy { position: absolute; z-index: 3; left: var(--v-gutter); top: clamp(6rem, 15vh, 9.5rem); max-width: min(54rem, 68vw); }
+  .hero__copy .v-display { font-size: clamp(2.4rem, 1.5rem + 3.2vw, 4.4rem); max-width: 20ch; }
+  .hero__rest { display: flex; flex-direction: column; align-items: flex-start; }
+  .hero__copy .v-lede { margin-top: var(--v-5); max-width: 42ch; color: var(--v-ink); opacity: .92; }
+  .hero__cta { margin-top: var(--v-6); display: flex; flex-wrap: wrap; gap: var(--v-3); }
+  /* светлый камень под кнопкой: «Позвонить» на тёмной подложке, иначе не читается */
+  .hero__cta .v-btn--ghost { background: rgb(11 27 46 / .78); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+  .hero__note { position: absolute; z-index: 3; left: var(--v-gutter); bottom: clamp(2rem, 6vh, 4rem); right: 34%;
+    display: flex; gap: var(--v-3) var(--v-8); flex-wrap: wrap; }
+  .hero__note > div { display: grid; gap: .2em; max-width: 17rem; }
+  .hero__note .v-label { color: var(--v-accent); }
+  .hero__note p { font-size: var(--v-t-sm); color: var(--v-ink); line-height: 1.45; }
+  @media (max-height: 820px) and (min-width: 761px) {
+    .hero__copy { top: 5.25rem; }
+    .hero__copy .v-display { font-size: var(--v-t-2xl); }
+  }
+  @media (max-width: 1100px) and (min-width: 761px) { .hero__note { right: var(--v-gutter); bottom: 5.5rem; } }
+  @media (max-width: 760px) {
+    /* дом в нижней половине экрана, текст сверху на небе */
+    .v-page .hero__img img { width: 100%; height: 62%; top: auto; bottom: 0; object-position: 50% 60%;
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 35%); mask-image: linear-gradient(to bottom, transparent 0%, #000 35%); }
+    .hero__tint { inset: 38% 0 0 0; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 35%); mask-image: linear-gradient(to bottom, transparent 0%, #000 35%); }
+    .hero__scrim { background: linear-gradient(to bottom, rgb(11 27 46 / .7) 0%, transparent 55%); }
+    .hero__copy { top: clamp(5.25rem, 11vh, 6.5rem); right: var(--v-gutter); max-width: none; }
+    .hero__copy .v-display { font-size: var(--v-t-2xl); }
+    .hero__copy .v-lede { max-width: 32ch; font-size: var(--v-t-base); }
+    .hero__note { display: none; }
+  }
+
+  /* ---- два направления: интерьер и улица, услуги строками ------------------ */
+  .dirs__head { max-width: 46rem; margin-bottom: var(--v-8); }
+  .dirs__head .v-body { color: var(--v-ink-soft); margin-top: var(--v-4); }
+  .dirs { display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-6) var(--v-9); align-items: start; }
+  .dirs > * { min-width: 0; }
+  .dir--out { margin-top: var(--v-10, 8rem); }
+  .dir figure { position: relative; border-radius: var(--v-radius); overflow: hidden; aspect-ratio: 4 / 5; box-shadow: var(--v-e2), var(--v-edge); margin-bottom: var(--v-6); }
+  .dir figure img { width: 100%; height: 100%; object-fit: cover; }
+  .dir figcaption { position: absolute; left: var(--v-4); top: var(--v-4); font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink); text-shadow: 0 1px 8px rgb(0 0 0 / .6); }
+  .dir h3 { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-xl); line-height: 1.1; letter-spacing: -0.01em; margin-bottom: var(--v-2); }
+  .dir__lead { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 44ch; margin-bottom: var(--v-4); }
+  .dir ul li { display: flex; justify-content: space-between; align-items: baseline; gap: var(--v-4); padding: var(--v-3) 0; border-top: 1px solid var(--v-hair); }
+  .dir ul li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .dir ul li span { font-weight: 500; }
+  .dir ul li em { font-style: normal; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); white-space: nowrap; }
+  .dirs__note { margin-top: var(--v-7); color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 62ch; }
+  .dirs__note b { color: var(--v-ink); font-weight: 500; }
+  @media (max-width: 760px) {
+    .dirs { grid-template-columns: 1fr; gap: var(--v-8); }
+    .dir--out { margin-top: 0; }
+    .dir figure { aspect-ratio: 4 / 3; }
+    .dirs__head { margin-bottom: var(--v-6); }
+  }
+
+  /* ---- фирменный ход: одна столешница, четыре камня ----------------------- */
+  .conf { position: absolute; inset: 0; overflow: hidden; }
+  .v-page .conf__img { position: absolute; inset: 0 -6% -16% -6%; width: 112%; max-width: none; height: 116%; object-fit: cover; object-position: 50% 62%; will-change: opacity; }
+  .v-page .conf__img + .conf__img { opacity: 0; }
+  .conf__shade { position: absolute; inset: 0; z-index: 2; pointer-events: none; background: radial-gradient(100% 70% at 0% 0%, rgb(11 27 46 / .78) 0%, rgb(11 27 46 / .4) 45%, transparent 72%); }
+  .conf__top { position: absolute; z-index: 3; left: var(--v-gutter); right: var(--v-gutter); top: clamp(5.5rem, 13vh, 8rem); }
+  .conf__top > div:first-child, .conf__rep { max-width: 40rem; }
+  .conf__top .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent); }
+  .conf__top .v-display { margin-bottom: var(--v-5); }
+  .conf__rep { position: relative; min-height: 9rem; }
+  .conf__rep > div { position: absolute; left: 0; top: 0; max-width: 34rem; }
+  .conf__rep h3 { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-xl); line-height: 1.1; letter-spacing: -0.01em; margin-bottom: var(--v-2); }
+  .conf__rep p { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 44ch; }
+  .conf__rep p b { color: var(--v-ink); font-weight: 500; }
+  .conf__rep .price { display: block; margin-top: var(--v-3); font-size: var(--v-t-sm); color: var(--v-ink); }
+  .conf__rep .price b { color: var(--v-accent); font-weight: 600; }
+  .sw { position: absolute; z-index: 3; right: 0; top: 0; display: grid; gap: var(--v-3); }
+  .sw__btn { display: flex; align-items: center; justify-content: flex-end; gap: var(--v-3); padding: 0; min-height: 44px; text-align: right; }
+  .sw__btn span { font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); transition: color .18s var(--v-ease-out), opacity .18s var(--v-ease-out); opacity: .6; }
+  .sw__btn i { width: 2.75rem; height: 2.75rem; border-radius: 50%; box-shadow: inset 0 0 0 1px rgb(255 255 255 / .18), 0 0 0 2px transparent, var(--v-e1);
+    transition: box-shadow .18s var(--v-ease-out), transform .18s var(--v-ease-out); }
+  .sw__btn.is-on span { color: var(--v-ink); opacity: 1; }
+  .sw__btn.is-on i { box-shadow: inset 0 0 0 1px rgb(255 255 255 / .18), 0 0 0 2px var(--v-accent), var(--v-e1); transform: scale(1.1); }
+  @media (hover: hover) and (pointer: fine) { .sw__btn:hover span { color: var(--v-ink); opacity: 1; } .sw__btn:hover i { transform: scale(1.06); } }
+  /* кружки-образцы: цвета камня, от палитры не зависят */
+  .sw__btn--granite i { background: radial-gradient(circle at 30% 30%, #8a8d90 0 6%, transparent 7%), radial-gradient(circle at 65% 55%, #1c1d1f 0 8%, transparent 9%), linear-gradient(135deg, #5d6064, #2e3033); }
+  .sw__btn--marble i { background: linear-gradient(120deg, transparent 40%, #9b9a96 42%, transparent 46%), linear-gradient(135deg, #f3f1ec, #d4d2cc); }
+  .sw__btn--quartzite i { background: linear-gradient(150deg, transparent 35%, #b49468 40%, transparent 50%), linear-gradient(135deg, #ece0cb, #c9b089); }
+  .conf__cta { position: absolute; z-index: 3; left: var(--v-gutter); bottom: clamp(2.5rem, 8vh, 5rem); }
+  @media (max-width: 760px) {
+    .v-page .conf__img { inset: auto -60% 0 -60%; width: 220%; height: auto; object-fit: unset;
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 34%); mask-image: linear-gradient(to bottom, transparent 0%, #000 34%); }
+    .conf__shade { background: linear-gradient(to bottom, rgb(11 27 46 / .6) 0%, transparent 60%); }
+    .conf__top { right: var(--v-gutter); max-width: none; top: clamp(4.5rem, 10vh, 6rem); }
+    .conf__top .v-display { margin-bottom: var(--v-4); }
+    .conf__rep { min-height: 12.5rem; }
+    .conf__rep h3 { font-size: var(--v-t-lg); }
+    .sw { position: relative; top: auto; right: auto; margin-top: var(--v-3); grid-auto-flow: column; justify-content: start; gap: var(--v-3); }
+    .sw__btn { flex-direction: column; gap: var(--v-2); min-width: 48px; min-height: 48px; padding: 4px 6px; text-align: center; justify-content: flex-start; }
+    .sw__btn span { font-size: .75rem; letter-spacing: .04em; }
+    .conf__cta { display: none; }
+  }
+
+  /* ---- наши работы: мозаика с фильтром «Интерьер / Улица» ----------------- */
+  .works__head { display: flex; flex-wrap: wrap; gap: var(--v-4) var(--v-8); align-items: end; justify-content: space-between; margin-bottom: var(--v-6); }
+  .works__head .v-body { color: var(--v-ink-soft); max-width: 46ch; margin-top: var(--v-3); }
+  .filter { display: inline-flex; gap: var(--v-1, 4px); padding: 4px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--v-hair-strong); }
+  .filter button { min-height: 40px; padding: 0 1.1em; border-radius: 999px; font-weight: 600; font-size: var(--v-t-sm); color: var(--v-ink-soft);
+    transition: background-color .18s var(--v-ease-out), color .18s var(--v-ease-out); }
+  .filter button.is-on { background: var(--v-accent); color: var(--v-accent-ink); }
+  @media (hover: hover) and (pointer: fine) { .filter button:not(.is-on):hover { color: var(--v-ink); } }
+  .works__grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: clamp(11rem, 17vw, 15rem); grid-auto-flow: dense; gap: var(--v-4); }
+  .work { position: relative; border-radius: var(--v-radius); overflow: hidden; background: var(--v-surface); box-shadow: var(--v-edge), var(--v-e1); }
+  .work[hidden] { display: none; }
+  .work--wide { grid-column: span 2; }
+  .work figure { position: absolute; inset: 0; }
+  .v-page .work__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .work::after { content: ""; position: absolute; inset: auto 0 0 0; height: 45%; background: linear-gradient(to top, rgb(11 27 46 / .82), transparent); pointer-events: none; }
+  .work figcaption { position: absolute; z-index: 2; left: var(--v-4); right: var(--v-4); bottom: var(--v-4); font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); line-height: 1.4; }
+  .work figcaption b { color: var(--v-ink); font-weight: 600; }
+  @media (max-width: 1000px) { .works__grid { grid-auto-rows: clamp(12rem, 25vw, 14rem); } }
+  @media (max-width: 760px) {
+    .works__grid { grid-template-columns: 1fr 1fr; grid-auto-rows: clamp(10rem, 46vw, 13rem); gap: var(--v-3); }
+    .work figcaption { left: var(--v-3); right: var(--v-3); bottom: var(--v-3); }
+    .filter { width: 100%; }
+    .filter button { flex: 1; padding: 0 .6em; }
+  }
+
+  /* ---- материалы: факты строками + три макро с шторками ---------------- */
+  .mat { display: grid; grid-template-columns: 1fr 1.05fr; gap: var(--v-9); align-items: start; }
+  .mat__facts li { padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); display: grid; gap: var(--v-2); }
+  .mat__facts li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .mat__facts h3 { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); line-height: 1.15; letter-spacing: -0.01em; }
+  .mat__facts p { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 46ch; }
+  .mat__figs { display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-5); align-items: start; }
+  .mat__figs figure { position: relative; border-radius: var(--v-radius); overflow: hidden; aspect-ratio: 3 / 4; box-shadow: var(--v-e2), var(--v-edge); }
+  .mat__figs figure img { width: 100%; height: 100%; object-fit: cover; }
+  .mat__figs figure:nth-child(2) { margin-top: var(--v-9); }
+  .mat__figs figure:nth-child(3) { margin-top: calc(-1 * var(--v-8)); }
+  .mat__figs figcaption { position: absolute; left: var(--v-4); right: var(--v-4); top: var(--v-4); font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); }
+  @media (max-width: 760px) {
+    .mat { grid-template-columns: 1fr; gap: var(--v-7); }
+    .mat__figs { gap: var(--v-4); }
+    .mat__figs figure:nth-child(2) { margin-top: var(--v-7); }
+    .mat__figs figure:nth-child(3) { margin-top: calc(-1 * var(--v-6)); }
+  }
+
+  /* ---- где монтаж ломается: шесть промахов раскрывающимися строками -------- */
+  .exp { display: grid; grid-template-columns: 1fr 1.3fr; gap: var(--v-7) var(--v-9); align-items: start; }
+  .exp__head .v-display { max-width: 14ch; }
+  .exp__list { grid-column: 1 / -1; }
+  .exp__row { border-top: 1px solid var(--v-hair); }
+  .exp__row:last-child { border-bottom: 1px solid var(--v-hair); }
+  .exp__row summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 1fr auto; gap: var(--v-6); align-items: center; padding: var(--v-5) 0; min-height: 44px; }
+  .exp__row summary::-webkit-details-marker { display: none; }
+  .exp__row summary:focus-visible { outline-offset: -3px; }
+  .exp__q { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); line-height: 1.15; letter-spacing: -0.01em; max-width: 34ch; text-wrap: balance; }
+  .exp__plus { position: relative; width: 2.25rem; height: 2.25rem; border-radius: 50%; flex: none; box-shadow: inset 0 0 0 1px var(--v-hair-strong); transition: transform .24s var(--v-ease-out), box-shadow .18s var(--v-ease-out); }
+  .exp__plus::before, .exp__plus::after { content: ""; position: absolute; left: 50%; top: 50%; width: 14px; height: 2px; background: var(--v-ink); transform: translate(-50%, -50%); }
+  .exp__plus::after { transform: translate(-50%, -50%) rotate(90deg); }
+  .exp__row[open] .exp__plus { transform: rotate(45deg); box-shadow: inset 0 0 0 1px var(--v-accent); }
+  .exp__row[open] .exp__plus::before, .exp__row[open] .exp__plus::after { background: var(--v-accent); }
+  @media (hover: hover) and (pointer: fine) { .exp__row summary:hover .exp__plus { transform: scale(1.06); } .exp__row[open] summary:hover .exp__plus { transform: rotate(45deg) scale(1.06); } }
+  .exp__a { display: grid; grid-template-columns: 11rem 1fr; gap: var(--v-4) var(--v-6); padding: 0 0 var(--v-6); max-width: 64rem; animation: exp-in .32s var(--v-ease-out) both; }
+  .exp__how { color: var(--v-accent); padding-top: .3em; }
+  .exp__a p { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 58ch; text-wrap: pretty; }
+  @keyframes exp-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .exp__end { grid-column: 2; margin-top: var(--v-2); font-family: var(--v-font-display); font-weight: 500; font-style: italic; font-size: var(--v-t-xl); line-height: 1.25; letter-spacing: -0.01em; max-width: 26ch; text-wrap: pretty; }
+  .exp__end b { color: var(--v-accent); font-weight: 500; }
+  @media (max-width: 1000px) { .exp__a { grid-template-columns: 1fr; gap: var(--v-2); } .exp__how { padding-top: 0; } }
+  @media (max-width: 760px) {
+    .exp { grid-template-columns: 1fr; gap: var(--v-6); }
+    .exp__head .v-display { max-width: none; }
+    .exp__row summary { gap: var(--v-4); padding: var(--v-4) 0; }
+    .exp__q { font-size: var(--v-t-base); }
+    .exp__a { padding-bottom: var(--v-5); }
+    .exp__end { grid-column: 1; font-size: var(--v-t-lg); }
+  }
+  @media (prefers-reduced-motion: reduce) { .exp__a { animation-duration: .01s; } .exp__plus { transition: none; } }
+
+  /* ---- как заказать: пять шагов ------------------------------------------- */
+  .steps { display: grid; grid-template-columns: .9fr 1.3fr; gap: var(--v-9); align-items: start; }
+  .steps__head { position: sticky; top: clamp(5rem, 14vh, 8rem); }
+  .steps__head .v-body { color: var(--v-ink-soft); margin-top: var(--v-4); }
+  .steps__head .v-body b { color: var(--v-ink); font-weight: 500; }
+  .steps__list li { display: grid; grid-template-columns: 4.5rem 1fr; gap: var(--v-4); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); align-items: start; }
+  .steps__list li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .steps__list .num { font-family: var(--v-font-display); font-weight: 500; font-style: italic; font-size: var(--v-t-2xl); line-height: 1; color: var(--v-accent); }
+  .steps__list h3 { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); line-height: 1.15; letter-spacing: -0.01em; margin-bottom: var(--v-2); }
+  .steps__list p { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 48ch; }
+  .steps__list p b { color: var(--v-ink); font-weight: 500; }
+  @media (max-width: 760px) {
+    .steps { grid-template-columns: 1fr; gap: var(--v-7); }
+    .steps__head { position: static; }
+    .steps__list li { grid-template-columns: 3rem 1fr; }
+    .steps__list .num { font-size: var(--v-t-xl); }
+  }
+
+  /* ---- финал: по центру, свет за курсором --------------------------------- */
+  .close { height: 100%; display: grid; grid-template-rows: 1fr auto; padding: 0 var(--v-gutter);
+    background: radial-gradient(56rem 38rem at calc(var(--v-mx, .5) * 100%) calc(var(--v-my, .45) * 100%), rgb(124 196 255 / .14), transparent 62%); }
+  .close__inner { align-self: center; text-align: center; display: flex; flex-direction: column; align-items: center; padding-top: var(--v-9); }
+  .close__inner .v-display { max-width: 20ch; }
+  .close__inner .v-lede { margin: var(--v-5) auto 0; max-width: 42ch; color: var(--v-ink-soft); }
+  .close__cta { margin-top: var(--v-7); display: flex; flex-wrap: wrap; justify-content: center; gap: var(--v-3); }
+  .close__meta { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 var(--v-7); margin-top: var(--v-6); color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  .close__meta a { color: var(--v-ink); font-weight: 600; }
+  .close__meta b { color: var(--v-ink); font-weight: 500; }
+  .foot { display: flex; justify-content: space-between; gap: var(--v-2) var(--v-4); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); flex-wrap: wrap; }
+  @media (max-width: 760px) {
+    .close__inner { padding-top: var(--v-7); }
+    .close__inner .v-lede { max-width: 32ch; margin-top: var(--v-4); }
+    .close__cta { margin-top: var(--v-5); }
+    .close__meta { flex-direction: column; gap: 0; margin-top: var(--v-3); }
+    .foot { padding: var(--v-4) 0 calc(var(--v-4) + 4rem); }
+  }
+</style>
+</head>
+<body>
+<div class="v-page">
+  <span data-v-progress></span>
+  <div class="v-grain" aria-hidden="true"></div>
+
+  <header class="bar" id="bar">
+    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>{{компания}}</a>
+    <nav class="nav" aria-label="Разделы сайта">
+      <a href="#uslugi">Услуги</a>
+      <a href="#kamen">Камень</a>
+      <a href="#raboty">Работы</a>
+      <a href="#oshibki">Монтаж</a>
+      <a href="#kak">Как заказать</a>
+      <a href="#zakaz">Контакты</a>
+    </nav>
+    <div class="bar__right">
+      <a class="bar__tel tap" href="tel:{{телефон}}">{{телефон}}</a>
+      <a class="v-btn" href="#zakaz">Заказ</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="menu"><i aria-hidden="true"></i></button>
+    </div>
+    <div class="menu" id="menu">
+      <nav aria-label="Разделы сайта">
+        <a href="#uslugi">Услуги</a>
+        <a href="#kamen">Камень</a>
+        <a href="#raboty">Работы</a>
+        <a href="#oshibki">Монтаж</a>
+        <a href="#kak">Как заказать</a>
+        <a href="#zakaz">Контакты</a>
+      </nav>
+      <a class="menu__tel" href="tel:{{телефон}}">{{телефон}}</a>
+    </div>
+  </header>
+
+  <a class="call" href="tel:{{телефон}}" aria-label="Позвонить"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Позвонить</a>
+
+  <main id="top">
+
+    <!-- 1 · УЗНАВАНИЕ: hero – дом с каменным фасадом, синяя тонировка, параллакс фона, заголовок собирается по словам -->
+    <section data-v-act="pin" data-v-span="1.8" data-v-drift="#0b1b2e" aria-label="Изделия из натурального камня">
+      <div data-v-stage>
+        <div class="v-layer hero__img" data-v-parallax="-0.6">
+          <img src="assets/hero-facade.webp" alt="" width="1920" height="1067" fetchpriority="high">
+        </div>
+        <div class="hero__tint" aria-hidden="true"></div>
+        <div class="hero__scrim" aria-hidden="true"></div>
+
+        <div class="hero__copy">
+          <h1 class="v-display v-display--xl" data-v-cue="0 0.9 0" data-v-kinetic="words" data-hero-cue>Монтаж изделий из натурального камня по всей России</h1>
+          <div class="hero__rest" data-v-cue="0 0.9 0" data-v-rise="0" data-hero-cue>
+            <p class="v-lede">Столешницы, лестницы, ванные, фасады и входные группы. Ориентир цены – по фото, точная смета – после замера. В&nbsp;договоре она не&nbsp;меняется.</p>
+            <div class="hero__cta">
+              <a class="v-btn" href="#zakaz">Заказ</a>
+              <a class="v-btn v-btn--ghost" href="tel:{{телефон}}">Позвонить</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__note" data-v-cue="0 0.8 0" data-v-rise="0" data-hero-cue>
+          <div><span class="v-label">Интерьер</span><p>Столешницы, подоконники, лестницы, мойки, ванные, полы и стены</p></div>
+          <div><span class="v-label">Улица</span><p>Фасады, входные группы, перила и балясины</p></div>
+          <div><span class="v-label">География</span><p>Работаем по всей России, на замер приезжаем на объект</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ВЫБОР: два направления, услуги строками с ценой -->
+    <section class="v-section is-light" data-v-act="flow" data-v-drift="#eaf3fb" id="uslugi" aria-label="Интерьер и улица">
+      <div class="v-wrap">
+        <div class="dirs__head" data-v-in data-v-stagger="60">
+          <h2 class="v-display v-display--lg">Внутри дома и <em>снаружи</em></h2>
+          <p class="v-body">Два направления, один подрядчик. По фото и размерам назовём ориентир за м², погонный метр или штуку, чтобы вы понимали бюджет ещё до замера.</p>
+        </div>
+        <div class="dirs">
+          <div class="dir">
+            <figure data-v-reveal="up" data-v-reveal-at="0.08 0.4">
+              <img src="assets/dir-interior.webp" alt="Лестница со ступенями из белого мрамора в частном доме" width="1100" height="1467" loading="lazy">
+              <figcaption>Интерьер</figcaption>
+            </figure>
+            <div data-v-in data-v-stagger="60">
+              <h3>Интерьер</h3>
+              <p class="dir__lead">Всё, что трогают руками каждый день: здесь важны точная кромка, ровные стыки и рисунок камня.</p>
+              <ul>
+                <li><span>Столешницы</span><em>уточнить</em></li>
+                <li><span>Подоконники</span><em>уточнить</em></li>
+                <li><span>Лестницы</span><em>уточнить</em></li>
+                <li><span>Мойки</span><em>уточнить</em></li>
+                <li><span>Ванные комнаты</span><em>уточнить</em></li>
+                <li><span>Полы</span><em>уточнить</em></li>
+                <li><span>Стены</span><em>уточнить</em></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dir dir--out">
+            <figure data-v-reveal="up" data-v-reveal-at="0.16 0.48">
+              <img src="assets/dir-exterior.webp" alt="Гранитные ступени и каменные балясины у входа в частный дом" width="1100" height="1467" loading="lazy">
+              <figcaption>Улица</figcaption>
+            </figure>
+            <div data-v-in data-v-stagger="60">
+              <h3>Улица</h3>
+              <p class="dir__lead">Камень, который стоит под снегом и дождём: здесь важны порода, крепёж и водоотвод.</p>
+              <ul>
+                <li><span>Фасады</span><em>уточнить</em></li>
+                <li><span>Входные группы</span><em>уточнить</em></li>
+                <li><span>Перила</span><em>уточнить</em></li>
+                <li><span>Балясины</span><em>уточнить</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="dirs__note" data-v-in data-v-in-self>Цена зависит от камня, толщины, обработки кромки и того, что окажется на месте: основание, подходы, высота. Поэтому по фото называем <b>ориентир</b>, а <b>точную смету</b> – после замера. После подписания договора <b>смета не меняется</b>.</p>
+      </div>
+    </section>
+
+    <!-- 3 · ПОВОРОТ: одна столешница, три камня (фирменный ход) -->
+    <section data-v-act="pin" data-v-span="2.2" data-v-drift="#091626" id="kamen" aria-label="Одна столешница, три камня">
+      <div data-v-stage>
+        <div class="conf" aria-hidden="true">
+          <img class="conf__img" src="assets/stone-granite.webp" alt="" width="1920" height="1067" loading="lazy">
+          <img class="conf__img" src="assets/stone-marble.webp" alt="" width="1920" height="1067" loading="lazy">
+          <img class="conf__img" src="assets/stone-quartzite.webp" alt="" width="1920" height="1067" loading="lazy">
+        </div>
+        <div class="conf__shade" aria-hidden="true"></div>
+
+        <div class="conf__top">
+          <div data-v-cue="0 1 0 0" data-v-rise="0">
+            <span class="v-label">Камень как на фото</span>
+            <h2 class="v-display v-display--md">Одна столешница. Три камня.</h2>
+          </div>
+          <div class="conf__rep">
+            <div data-v-cue="0 0.27 0 0.07">
+              <h3>Гранит</h3>
+              <p><b>Самый твёрдый из четырёх.</b> Не боится ножа, горячей кастрюли и воды, почти не впитывает. Идёт и в дом, и на улицу: ступени, цоколь, подоконники.</p>
+              <span class="price v-nums">Столешница, погонный метр: <b>уточнить</b></span>
+            </div>
+            <div data-v-cue="0.25 0.75 0.07 0.07">
+              <h3>Мрамор</h3>
+              <p><b>Мягкий рисунок прожилок.</b> Камень мягче гранита: лимон и вино оставляют следы, поэтому поверхность пропитываем. Хорош в ванной, на стенах и лестницах.</p>
+              <span class="price v-nums">Столешница, погонный метр: <b>уточнить</b></span>
+            </div>
+            <div data-v-cue="0.73 2 0.07 0">
+              <h3>Кварцит</h3>
+              <p><b>Выглядит как мрамор, работает как гранит.</b> Твёрдый и плотный, рисунок тёплыми волнами. Для кухни, где готовят каждый день.</p>
+              <span class="price v-nums">Столешница, погонный метр: <b>уточнить</b></span>
+            </div>
+          </div>
+
+          <div class="sw" role="group" aria-label="Выбор камня">
+            <button class="sw__btn sw__btn--granite is-on" type="button" data-sw="0"><span>Гранит</span><i aria-hidden="true"></i></button>
+            <button class="sw__btn sw__btn--marble" type="button" data-sw="1"><span>Мрамор</span><i aria-hidden="true"></i></button>
+            <button class="sw__btn sw__btn--quartzite" type="button" data-sw="2"><span>Кварцит</span><i aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+        <div class="conf__cta">
+          <a class="v-btn" href="#zakaz" data-v-cue="0.6 0.99 0.06 0.03">Заказ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · ДОКАЗАТЕЛЬСТВО: работы, фильтр «Интерьер / Улица». Сейчас демо-фото, перед сдачей заменить настоящими -->
+    <section class="v-section is-light is-light--deep" data-v-act="flow" data-v-drift="#dcebf8" id="raboty" aria-label="Наши работы">
+      <div class="v-wrap">
+        <div class="works__head" data-v-in data-v-stagger="60">
+          <div>
+            <h2 class="v-display v-display--lg">Наши работы</h2>
+            <p class="v-body">Камень в квартирах, домах и на улице: ванные, подоконники, полы, ступени, перила, фасады.</p>
+          </div>
+          <div class="filter" role="group" aria-label="Показать работы">
+            <button type="button" class="is-on" data-f="all" aria-pressed="true">Все</button>
+            <button type="button" data-f="in" aria-pressed="false">Интерьер</button>
+            <button type="button" data-f="out" aria-pressed="false">Улица</button>
+          </div>
+        </div>
+        <ul class="works__grid" data-v-in data-v-stagger="80">
+          <li class="work work--wide" data-kind="in"><figure>
+            <img class="work__img" src="assets/work-bath.webp" alt="Ванная: столешница и стена из белого мрамора" width="1100" height="619" loading="lazy">
+            <figcaption><b>Ванная</b><br>Мрамор, столешница и стена</figcaption>
+          </figure></li>
+          <li class="work" data-kind="out"><figure>
+            <img class="work__img" src="assets/work-entrance.webp" alt="Гранитные ступени у входа в магазин" width="760" height="760" loading="lazy">
+            <figcaption><b>Входная группа</b><br>Гранит, ступени</figcaption>
+          </figure></li>
+          <li class="work" data-kind="in"><figure>
+            <img class="work__img" src="assets/work-sill.webp" alt="Подоконник из бежевого камня" width="760" height="760" loading="lazy">
+            <figcaption><b>Подоконник</b><br>Бежевый камень</figcaption>
+          </figure></li>
+          <li class="work" data-kind="out"><figure>
+            <img class="work__img" src="assets/work-balusters.webp" alt="Каменная балюстрада на террасе дома" width="760" height="760" loading="lazy">
+            <figcaption><b>Перила и балясины</b><br>Терраса дома</figcaption>
+          </figure></li>
+          <li class="work" data-kind="in"><figure>
+            <img class="work__img" src="assets/work-floor.webp" alt="Пол в прихожей из серой мраморной плитки" width="760" height="760" loading="lazy">
+            <figcaption><b>Пол</b><br>Мрамор, прихожая</figcaption>
+          </figure></li>
+          <li class="work work--wide" data-kind="out"><figure>
+            <img class="work__img" src="assets/work-facade.webp" alt="Облицовка первого этажа дома натуральным камнем" width="1100" height="619" loading="lazy">
+            <figcaption><b>Фасад</b><br>Облицовка первого этажа</figcaption>
+          </figure></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5 · ДОКАЗАТЕЛЬСТВО: камень для дома и для улицы -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#0e2238" id="materialy" aria-label="Камень и монтаж">
+      <div class="v-wrap mat">
+        <div class="v-stack" data-v-in data-v-stagger="60">
+          <h2 class="v-display v-display--lg">Камень для дома и для улицы</h2>
+          <p class="v-body v-soft">Один и тот же камень ведёт себя по-разному на кухне и на крыльце. Поэтому для каждой задачи своя порода, обработка и крепёж.</p>
+          <ul class="mat__facts">
+            <li><h3>Внутри: точная кромка</h3><p>Кромку обрабатываем по месту: фаска, скругление или прямой срез. Края без сколов, вырезы под мойку и варочную панель по шаблону.</p></li>
+            <li><h3>Стыки: рисунок продолжается через шов</h3><p>Плиты раскладываем до распила, чтобы прожилки шли дальше через стык. Шов подбираем в цвет камня.</p></li>
+            <li><h3>Улица: камень и монтаж под наш климат</h3><p>Для ступеней и цоколя – камень, который почти не впитывает воду, и шероховатая поверхность, чтобы зимой не скользило. Облицовку крепим так, чтобы вода не стояла за плитой.</p></li>
+          </ul>
+        </div>
+        <div class="mat__figs">
+          <figure data-v-reveal="up" data-v-reveal-at="0.12 0.42">
+            <img src="assets/mac-edge.webp" alt="Кромка гранитной столешницы с фаской крупно" width="900" height="1200" loading="lazy">
+            <figcaption>Кромка с фаской</figcaption>
+          </figure>
+          <figure data-v-reveal="left" data-v-reveal-at="0.2 0.5">
+            <img src="assets/mac-seam.webp" alt="Стык двух мраморных плит, прожилки продолжаются через шов" width="900" height="1200" loading="lazy">
+            <figcaption>Стык по рисунку</figcaption>
+          </figure>
+          <figure data-v-reveal="up" data-v-reveal-at="0.3 0.6">
+            <img src="assets/mac-frost.webp" alt="Иней на шероховатой гранитной ступени" width="900" height="1200" loading="lazy">
+            <figcaption>Ступень зимой</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · ЦЕНА БЕЗДЕЙСТВИЯ: где монтаж камня обычно ломается -->
+    <section class="v-section is-light" data-v-act="flow" data-v-drift="#eaf3fb" id="oshibki" aria-label="Где монтаж камня ломается">
+      <div class="v-wrap exp">
+        <div class="exp__head" data-v-in data-v-in-self>
+          <h2 class="v-display v-display--md">Где монтаж камня обычно <em>ломается</em></h2>
+        </div>
+        <div class="exp__intro" data-v-in data-v-stagger="80">
+          <p class="v-body">Камень дорогой, и ошибку в нём не закрасишь. Семь промахов, после которых зовут переделывать или спорят о деньгах, и как мы их не допускаем.</p>
+        </div>
+        <div class="exp__list" data-v-in data-v-stagger="70">
+          <details class="exp__row" open>
+            <summary><span class="exp__q">Назвали одну цену, а после замера – совсем другую</span><i class="exp__plus" aria-hidden="true"></i></summary>
+            <div class="exp__a"><span class="v-label exp__how">Как делаем мы</span><p>Честно говорим: по фото можно назвать только ориентир. Что может его изменить – основание, подходы, нестандартные вырезы, другой камень – называем сразу. Точную смету даём после замера и вносим в договор: после подписания она не меняется.</p></div>
+          </details>
+          <details class="exp__row">
+            <summary><span class="exp__q">Привезли не тот камень, что на фото</span><i class="exp__plus" aria-hidden="true"></i></summary>
+            <div class="exp__a"><span class="v-label exp__how">Как делаем мы</span><p>У натурального камня каждая плита своя. До распила показываем вам именно ваши плиты, вживую или на фото, и только после согласия режем.</p></div>
+          </details>
+          <details class="exp__row">
+            <summary><span class="exp__q">Скол при перевозке или монтаже</span><i class="exp__plus" aria-hidden="true"></i></summary>
+            <div class="exp__a"><span class="v-label exp__how">Как делаем мы</span><p>Плиты везём стоя, в защите по кромке, заносим на присосках и такелажных ремнях. Вырезы и кромки обрабатываем так, чтобы на месте осталась только подгонка.</p></div>
+          </details>
+          <details class="exp__row">
+            <summary><span class="exp__q">Стык посреди столешницы и разный рисунок</span><i class="exp__plus" aria-hidden="true"></i></summary>
+            <div class="exp__a"><span class="v-label exp__how">Как делаем мы</span><p>Стык уводим под мойку или в угол, плиты подбираем по рисунку, шов шлифуем и подкрашиваем в цвет камня.</p></div>
+          </details>
+          <details class="exp__row">
+            <summary><span class="exp__q">Уложили неровно, через год пошли трещины</span><i class="exp__plus" aria-hidden="true"></i></summary>
+            <div class="exp__a"><span class="v-label exp__how">Как делаем мы</span><p>Под камень выводим основание в уровень и кладём на клей для натурального камня, без пустот. Пол и ступени проверяем уровнем по всей площади.</p></div>
+          </details>
+          <details class="exp__row">
+            <summary><span class="exp__q">Облицовка отвалилась после первой зимы</span><i class="exp__plus" aria-hidden="true"></i></summary>
+            <div class="exp__a"><span class="v-label exp__how">Как делаем мы</span><p>Вода за плитой замерзает и отрывает камень. На фасаде и цоколе ставим механический крепёж вместе с морозостойким клеем, делаем отливы и швы, через которые вода уходит.</p></div>
+          </details>
+          <details class="exp__row">
+            <summary><span class="exp__q">Перила шатаются</span><i class="exp__plus" aria-hidden="true"></i></summary>
+            <div class="exp__a"><span class="v-label exp__how">Как делаем мы</span><p>Каждую балясину сажаем на металлический штырь в основание и поручень, а не только на клей. Перила проверяем рукой при сдаче.</p></div>
+          </details>
+        </div>
+        <p class="exp__end" data-v-in data-v-in-self>Камень прощает многое, <b>кроме спешки при монтаже</b>.</p>
+      </div>
+    </section>
+
+    <!-- 7 · КАК ЗАКАЗАТЬ -->
+    <section class="v-section is-light is-light--deep" data-v-act="flow" data-v-drift="#dcebf8" id="kak" aria-label="Как заказать">
+      <div class="v-wrap steps">
+        <div class="steps__head" data-v-in data-v-in-self>
+          <h2 class="v-display v-display--lg">Как заказать</h2>
+          <p class="v-body">Пять шагов от заявки до готового изделия. <b>Ориентир цены</b> – по фото, <b>точная смета</b> – после замера. После подписания договора <b>смета не меняется</b>.</p>
+        </div>
+        <ol class="steps__list" data-v-in data-v-stagger="90">
+          <li><span class="num">1</span><div><h3>Заявка</h3><p>Пишете или звоните: что нужно, где и примерные размеры. Подойдут фото места и замеры рулеткой. В ответ – <b>ориентир цены</b> за м², погонный метр или штуку.</p></div></li>
+          <li><span class="num">2</span><div><h3>Замер</h3><p>Приезжаем на объект, снимаем точные размеры, смотрим основание и подходы, чтобы занести плиты без риска.</p></div></li>
+          <li><span class="num">3</span><div><h3>Точная смета и договор</h3><p>Считаем по замеру: камень, обработку кромки, вырезы и монтаж. Всё, что входит в цену, видно в смете. Смету вносим в договор, и после подписания она <b>не меняется</b>.</p></div></li>
+          <li><span class="num">4</span><div><h3>Подбор камня и изготовление</h3><p>Показываем ваши плиты до распила, раскладываем рисунок, режем и обрабатываем кромку.</p></div></li>
+          <li><span class="num">5</span><div><h3>Монтаж</h3><p>Привозим, ставим, выводим швы и проверяем уровень. Сдаём изделие, когда вы его осмотрели.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 8 · ДЕЙСТВИЕ: заказ -->
+    <section data-v-act="pin" data-v-span="1.4" data-v-drift="#0e2238" id="zakaz" aria-label="Заказ">
+      <div data-v-stage>
+        <div class="close" data-v-spotlight>
+          <div class="close__inner">
+            <h2 class="v-display v-display--lg" data-v-cue="0.04 2 0 0" data-v-kinetic="lines">Пришлите фото и размеры, назовём ориентир цены</h2>
+            <p class="v-lede" data-v-cue="0.04 2 0 0">Фото места, где будет камень, и замеры рулеткой. Ответим ориентиром за м², погонный метр или штуку. Точную смету дадим после замера, и после подписания договора она не меняется.</p>
+            <div class="close__cta" data-v-cue="0.04 2 0 0" data-v-rise="0">
+              <a class="v-btn" href="{{ссылка-записи}}" data-v-magnet="0.22">Заказ</a>
+              <a class="v-btn v-btn--ghost" href="tel:{{телефон}}">Позвонить</a>
+            </div>
+            <div class="close__meta" data-v-cue="0.04 2 0 0">
+              <a class="tap" href="tel:{{телефон}}">{{телефон}}</a>
+              <span class="tap">Работаем по всей России</span>
+              <span class="tap">Офис:&nbsp;<b>{{адрес}}</b></span>
+              <span class="tap">{{часы}}</span>
+            </div>
+          </div>
+          <footer class="foot">
+            <span>{{компания}} · по всей России · {{реквизиты}}</span>
+            <span>Монтаж изделий из натурального камня: интерьер и улица</span>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  (function () {
+    // На телефоне текст hero не гаснет до конца сцены: реплики «встречают» и держатся.
+    if (window.matchMedia('(max-width: 760px)').matches) {
+      document.querySelectorAll('[data-hero-cue]').forEach(function (el) { el.setAttribute('data-v-cue', '0 1 0 0'); });
+    }
+  })();
+
+  Vibe.mount(document.querySelector('.v-page'));
+
+  // Шапка: плотный фон, как только уехал первый экран.
+  (function () {
+    var bar = document.getElementById('bar'), on = null;
+    function check() { var s = window.scrollY > 80; if (s !== on) { on = s; bar.classList.toggle('is-scrolled', s); } }
+    window.addEventListener('scroll', check, { passive: true }); check();
+  })();
+
+  // Меню: раскрытие на узком экране и подсветка раздела, который сейчас на экране.
+  (function () {
+    var bar = document.getElementById('bar');
+    var burger = bar.querySelector('.burger');
+    var links = bar.querySelectorAll('.nav a, .menu nav a');
+    function setOpen(v) { bar.classList.toggle('is-open', v); burger.setAttribute('aria-expanded', v); }
+    burger.addEventListener('click', function () { setOpen(!bar.classList.contains('is-open')); });
+    bar.querySelectorAll('.menu a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+    document.addEventListener('click', function (e) { if (!bar.contains(e.target)) setOpen(false); });
+
+    var ids = ['uslugi', 'kamen', 'raboty', 'oshibki', 'kak', 'zakaz'];
+    var secs = ids.map(function (id) { return document.getElementById(id); });
+    var cur = null;
+    function mark() {
+      var y = window.scrollY + window.innerHeight * 0.35, on = null;
+      secs.forEach(function (s, i) { if (s.getBoundingClientRect().top + window.scrollY <= y) on = ids[i]; });
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) on = 'zakaz';
+      if (on === cur) return; cur = on;
+      links.forEach(function (a) { var hit = a.getAttribute('href') === '#' + on; a.classList.toggle('is-on', hit); if (hit) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+    }
+    window.addEventListener('scroll', mark, { passive: true }); window.addEventListener('resize', mark); mark();
+  })();
+
+  // Фирменный ход: одна столешница, несколько камней. Кадры лежат друг на друге,
+  // прозрачность трёх верхних ведётся от --v-p акта: плато на каждом камне, кроссфейд между ними.
+  (function () {
+    var act = document.getElementById('kamen');
+    var imgs = act.querySelectorAll('.conf__img');
+    var sws = act.querySelectorAll('.sw__btn');
+    var live = false, lastF = -1, lastN = -1, N = imgs.length - 1;
+    var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function ss(t) { t = t < 0 ? 0 : t > 1 ? 1 : t; return t * t * (3 - 2 * t); }
+    function paint(f) {
+      for (var i = 1; i < imgs.length; i++) { var o = f - (i - 1); imgs[i].style.opacity = (o < 0 ? 0 : o > 1 ? 1 : o).toFixed(3); }
+      var n = Math.round(f);
+      if (n !== lastN) { lastN = n; sws.forEach(function (s, i) { s.classList.toggle('is-on', i === n); s.setAttribute('aria-pressed', i === n); }); }
+    }
+    function tick() {
+      var p = parseFloat(getComputedStyle(act).getPropertyValue('--v-p')) || 0;
+      var x = p * N, k = Math.min(Math.floor(x), N - 1), f = k + ss((x - k - 0.35) / 0.3);
+      if (f !== lastF) { lastF = f; paint(f); }
+      if (live) requestAnimationFrame(tick);
+    }
+    new IntersectionObserver(function (es) { live = es[0].isIntersecting; if (live) tick(); }).observe(act);
+    tick();
+    // Клик по образцу: прокрутка к тому месту акта, где этот камень стоит на плато.
+    var stops = Array.prototype.map.call(sws, function (s, i) { return i === 0 ? 0.04 : i === N ? 0.96 : i / N; });
+    sws.forEach(function (s, i) {
+      s.addEventListener('click', function () {
+        var top = act.getBoundingClientRect().top + window.scrollY;
+        var y = top + (act.offsetHeight - window.innerHeight) * stops[i];
+        window.scrollTo({ top: y, behavior: RM ? 'instant' : 'smooth' });
+      });
+    });
+  })();
+
+  // Фильтр работ: «Все / Интерьер / Улица».
+  (function () {
+    var btns = document.querySelectorAll('.filter button');
+    var works = document.querySelectorAll('.work[data-kind]');
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var f = b.getAttribute('data-f');
+        btns.forEach(function (x) { x.classList.toggle('is-on', x === b); x.setAttribute('aria-pressed', x === b); });
+        works.forEach(function (w) { w.hidden = f !== 'all' && w.getAttribute('data-kind') !== f; });
+      });
+    });
+  })();
+</script>
+</body>
+</html>
